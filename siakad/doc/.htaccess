@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^Home$ index.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^(([^/\.])+[A-Za-z0-9]+)/?$ index.php?page=$1
+ErrorDocument 404 http://%{HTTP_HOST}/a/halaman-tidak-ditemukan

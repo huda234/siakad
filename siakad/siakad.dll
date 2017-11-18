@@ -1,0 +1,19 @@
+create table mahasiswa (
+ Nim char(50) not null,
+ Nama varchar(100) not null,
+ JenisKelamin enum('L','P') not null,
+ Alamat text(300) not null,
+ Tempat varchar(50) not null,
+ Tgl_lahir date not null,
+ Agama varchar(50) not null,
+ Provinsi varchar(50) not null,
+ Status_Sipil enum('Menikah', 'Belum Menikah') not null,
+ Email varchar(50) not null,
+ No_Telp varchar(15) not null,
+Primary Key(Nim))Engine=MyIsam Default Charset=utf8;
+
+create table fakultas(
+ id_fakultas int(15) not null AUTO_INCREMENT,
+ nama_fakultas varchar(50) not null,
+ nama_dekan varchar(50) not null,
+primary key(id_fakultas))Engine=MyIsam Default Charset=utf8;
